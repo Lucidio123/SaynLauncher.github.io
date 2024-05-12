@@ -59,6 +59,7 @@
         <input type="password" id="password" placeholder="Password" />
         <br>
         <button onclick="login()">Login</button>
+        <button onclick="exit()">Exit</button>
     </div>
 
     <script>
@@ -175,6 +176,13 @@
             } else {
                 alert("Incorrect username or password!");
             }
+        }
+
+        function exit() {
+            // Send a message to Python script to exit
+            // Example: window.location.href = "exit.php";
+            // You need to replace "exit.php" with your Python script URL or a server route.
+            // The Python script should listen for this request and perform the exit.
         }
     </script>
 </body>
