@@ -180,7 +180,7 @@
 
         function exit() {
             // Send a message to Python code to close the web view
-            window.external.invoke('exit');
+                  window.pywebview.api.close();
         }
     </script>
 </body>
