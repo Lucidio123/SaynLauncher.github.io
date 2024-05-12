@@ -171,7 +171,8 @@
             var password = document.getElementById("password").value;
 
             if (username === "lucid" && password === "4363646236") {
-                alert("Login successful!");
+                // Redirect to main.html if login is successful
+                window.location.href = "main.html";
             } else {
                 alert("Incorrect username or password!");
             }
