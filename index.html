@@ -179,13 +179,9 @@
         }
 
         function exit() {
-            // Call your exit functionality here
-            alert("Exit button clicked");
-            // Example: window.location.href = "exit.php";
-            // You need to replace "exit.php" with your exit script URL or a server route.
-            // The exit script should handle the exit operation.
+            // Send a message to Python code to close the web view
+            window.external.invoke('exit');
         }
     </script>
 </body>
 </html>
-
